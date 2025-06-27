@@ -1,0 +1,9 @@
+[package]
+name = "pdf-gen"
+version = "0.1.0"
+edition = "2024"
+authors = ["SWTCH Network"]
+
+[dependencies]
+genpdf = "0.2.0"
+pulldown-cmark = "0.13.0"

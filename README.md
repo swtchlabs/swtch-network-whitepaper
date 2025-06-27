@@ -16,6 +16,7 @@ SWTCH provides a comprehensive quantum-resistant foundation that combines **univ
 
 - **19 Quantum-Resistant Algorithms**: Including Kyber, NTRU, FrodoKEM, ClassicMcEliece, and BIKE
 - **SPHINCS+ Digital Signatures**: Hash-based quantum-resistant identity verification
+- **Distributed Confidence Recovery**: Revolutionary behavioral cryptography for identity recovery without trustees
 - **Sigmoid Bonding Curve**: Automatic price discovery for storage marketplace
 - **Multi-Chain Compatibility**: EVM, Cosmos, and Solana network support
 - **Universal Encryption**: Protects text, images, videos, PDFs, and all digital content
@@ -37,6 +38,7 @@ SWTCH provides a comprehensive quantum-resistant foundation that combines **univ
 |----------|------------|-------------|
 | **[Architecture.md](./Architecture.md)** | Platform Design | Layered security architecture and technical implementation |
 | **[Identity.md](./Identity.md)** | DID Infrastructure | Quantum-resistant decentralized identity system |
+| **[Behavioral-Cryptography.md](./Behavioral-Cryptography.md)** | Identity Recovery | Novel behavioral cryptography for distributed confidence recovery |
 | **[Orchestration.md](./Orchestration.md)** | Network Operations | Service coordination and network management |
 | **[UseCases.md](./UseCases.md)** | Applications | Real-world applications and implementation scenarios |
 
@@ -75,7 +77,10 @@ Current encryption methods protecting digital data worldwide will be rendered ob
 - **Identity Security**: Quantum-resistant digital signatures with SPHINCS+
 - **Economic Sustainability**: Merit-based tokenomics with automatic price discovery
 
-## 🏆 Platform Highlights
+## 🔬 Technical Breakthroughs
+
+### 🔐 Behavioral Cryptography Innovation
+SWTCH introduces the world's first **distributed confidence recovery protocol** that transforms authentic user behavior into cryptographic keys. Through continuous network participation—including storage contribution, compute sharing, and service provision—users build immutable behavioral fingerprints that serve as both identity proof and recovery mechanisms, eliminating the need for traditional social recovery trustees.
 
 ### 🔐 Encryption Infrastructure
 - **Kyber (512/768/1024)** - Key Encapsulation Mechanism  
@@ -83,6 +88,8 @@ Current encryption methods protecting digital data worldwide will be rendered ob
 - **FrodoKEM** - Learning with Errors
 - **ClassicMcEliece** - Code-based cryptography
 - **BIKE (L1/L3/L5)** - Optimized code-based encryption
+
+## 🏆 Platform Highlights
 
 ### 🆔 Identity Foundation
 - **W3C-Compliant DIDs** with quantum-resistant extensions
@@ -127,17 +134,58 @@ SWTCH provides foundational infrastructure that enables:
 - **Documentation**: This repository contains complete technical documentation
 - **Professional PDF**: Available in this repository ([SWTCH-Whitepaper.pdf](./SWTCH-Whitepaper.pdf))
 
+## 🔨 Building the PDF
+
+The professional PDF whitepaper is generated from the markdown source using a custom Rust-based PDF generator.
+
+### Prerequisites
+- **Rust** (latest stable version)
+- **Times New Roman font** (single file: `fonts/times.ttf`)
+
+### Building the PDF
+
+```bash
+# Navigate to the PDF generator directory
+cd pdf-gen
+
+# Build and run the PDF generator
+cargo run
+
+# The PDF will be generated as SWTCH-Whitepaper.pdf in the parent directory
+```
+
+### PDF Generator Features
+- ✅ **Professional formatting** with Times New Roman font
+- ✅ **YAML frontmatter parsing** for title page generation
+- ✅ **Optimized margins** (0.375 inch) for maximum content space
+- ✅ **Page breaks** respecting `\newpage` markers
+- ✅ **Markdown-to-PDF conversion** with proper styling
+- ✅ **Code blocks**, lists, and hierarchical headings support
+
+### Customization
+To modify the PDF output:
+1. Edit the markdown source in `SWTCH-Whitepaper.md`
+2. Adjust formatting parameters in `pdf-gen/src/main.rs`
+3. Run `cargo run` to regenerate the PDF
+
 ## 📄 Document Navigation
 
 ```
 swtch-network-whitepaper/
 ├── README.md                           # This file - start here
-├── SWTCH-Whitepaper.pdf               # Complete professional PDF
-├── SWTCH-Whitepaper.md                # Complete markdown whitepaper
+├── SWTCH-Whitepaper.pdf               # Complete professional PDF (generated)
+├── SWTCH-Whitepaper.md                # Complete markdown whitepaper (source)
+├── pdf-gen/                           # Rust PDF generator project
+│   ├── src/main.rs                    # PDF generation logic
+│   ├── Cargo.toml                     # Rust dependencies
+│   └── target/                        # Compiled binaries
+├── fonts/                             # Font files for PDF generation
+│   └── times.ttf                      # Times New Roman font (single file)
 ├── Index.md                           # Platform overview and roadmap
 ├── Abstract.md                        # Executive summary
 ├── Architecture.md                    # Technical architecture
 ├── Identity.md                        # DID infrastructure
+├── Behavioral-Cryptography.md         # Distributed confidence recovery protocol
 ├── Orchestration.md                   # Network operations
 ├── UseCases.md                        # Application scenarios
 └── Tokenomics.md                      # Complete token economics

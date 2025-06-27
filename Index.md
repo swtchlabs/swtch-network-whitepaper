@@ -8,6 +8,7 @@ SWTCH proposes a comprehensive quantum-resistant foundation that provides secure
 The document covers:
 - [Abstract](./Abstract.md)
 - [Identity](./Identity.md)
+- [Behavioral Cryptography](./Behavioral-Cryptography.md)
 - [Tokenomics](./Tokenomics.md)
 - [Architecture](./Architecture.md)
 - [Orchestration](./Orchestration.md)
@@ -25,6 +26,7 @@ This white paper is intended for developers building on the SWTCH quantum-resist
 
 #### Quantum-Resistant DID Foundation
 - **SPHINCS+ Signatures**: Quantum-resistant digital signatures providing verifiable authentication and authorization
+- **Distributed Confidence Recovery**: Revolutionary behavioral cryptography protocol that transforms network participation patterns into identity recovery mechanisms, eliminating reliance on social recovery trustees
 - **Verifiable Credentials System**: Comprehensive credential management with post-quantum cryptographic security
 - **Multi-Chain DID Registry**: Decentralized identity anchoring across EVM-compatible chains, Cosmos, and Solana networks
 - **Developer SDK**: Multi-language APIs for quantum-resistant DID operations and credential management

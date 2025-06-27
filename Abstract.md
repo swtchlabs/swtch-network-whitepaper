@@ -15,6 +15,7 @@ The SWTCH foundation provides:
 - **Multiple Cipher Suites**: AES, ChaCha20, and XChaCha20 cryptographic implementations optimized for different performance requirements
 - **Hybrid Cryptography**: Integration of post-quantum algorithms with traditional methods ensuring maximum security assurance
 - **SPHINCS+ Identity System**: Hash-based quantum-resistant digital signatures for identity authentication and authorization
+- **Distributed Confidence Recovery**: Revolutionary behavioral cryptography protocol that eliminates traditional social recovery mechanisms by transforming network participation into identity verification
 - **Verifiable Credentials Infrastructure**: Comprehensive credential issuance, verification, and management with post-quantum security
 - **Multi-Chain Compatibility**: Cross-chain deployment supporting EVM, Cosmos, and Solana ecosystems
 
